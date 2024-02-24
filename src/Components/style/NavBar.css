@@ -1,0 +1,38 @@
+nav{
+    box-shadow:   0 .125rem .25rem  rgb(175, 175, 175);
+}
+.nav-item{
+    font-size: larger;
+    font-weight: 500;
+}
+
+
+.nav-link {
+    position: relative;
+}
+.nav-item:hover .nav-link {
+    color: #0DBA4B; /* Change the text color on hover */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #0DBA4B; /* Set the color of the underline */
+    transition: width 0.3s ease; /* Add smooth transition */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Expand the width on hover */
+}
+#cards-w{
+    box-shadow:   0 .125rem .25rem  rgb(175, 175, 175);
+    cursor: pointer;
+}
+#cards-w:hover{
+    box-shadow:  0 .2rem 0.500rem  rgb(45, 45, 44);
+}
