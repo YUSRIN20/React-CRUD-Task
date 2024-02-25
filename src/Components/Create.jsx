@@ -47,22 +47,22 @@ const Create = () => {
                 <form onSubmit={handleFormSubmit}>
                     <div  class ='my-3'>
                         <label>User Name<span class="text-danger">*</span>
-                            <input className='form-control' type='text' name='user_name' value={CreateData.user_name} onChange={handleChange}></input>
+                            <input className='form-control' type='text' name='user_name' value={CreateData.user_name} onChange={handleChange}required></input>
                         </label>
                     </div>
                     <div  class ='mb-3'>
                         <label>Age<span class="text-danger">*</span>
-                            <input className='form-control' type='text' name='user_age' value={CreateData.user_age} onChange={handleChange}></input>
+                            <input className='form-control' type='text' name='user_age' value={CreateData.user_age} onChange={handleChange} required></input>
                         </label>
                     </div>
                     <div class ='mb-3'>
                         <label>User Email<span class="text-danger">*</span>
-                            <input className='form-control' type='email' name='user_email' value={CreateData.user_email} onChange={handleChange}></input>
+                            <input className='form-control' type='email' name='user_email' value={CreateData.user_email} onChange={handleChange} required></input>
                         </label>
                     </div>
                     <div  class ='mb-3'>
                         <label>User Country<span class="text-danger">*</span>
-                            <input className='form-control' type='text' name='user_country' value={CreateData.user_country} onChange={handleChange}></input>
+                            <input className='form-control' type='text' name='user_country' value={CreateData.user_country} onChange={handleChange} required></input>
                         </label>
                     </div>
                     <div class="d-flex justify-content-center" id="btn-div">

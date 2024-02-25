@@ -67,22 +67,22 @@ const Edit = ({ id }) => {
                 <form onSubmit={handleFormSubmit} class="fw-bolder">
                     <div class='my-3'>
                         <label className='form-label'>User Name<span class="text-danger">*</span>
-                            <input className='form-control Inputs' id="" type='text' name='user_name' value={editData.user_name} onChange={handleChange}></input>
+                            <input className='form-control Inputs' id="" type='text' name='user_name' value={editData.user_name} onChange={handleChange} required></input>
                         </label>
                     </div>
                     <div class='mb-3'>
                         <label >Age<span class="text-danger">*</span>
-                            <input className='form-control Inputs' type='text' name='user_age' value={editData.user_age} onChange={handleChange}></input>
+                            <input className='form-control Inputs' type='text' name='user_age' value={editData.user_age} onChange={handleChange} required></input>
                         </label>
                     </div>
                     <div class='mb-3'>
                         <label>User Email<span class="text-danger">*</span>
-                            <input className='form-control Inputs' type='email' name='user_email' value={editData.user_email} onChange={handleChange}></input>
+                            <input className='form-control Inputs' type='email' name='user_email' value={editData.user_email} onChange={handleChange} required></input>
                         </label>
                     </div>
                     <div class='mb-3'>
                         <label>User Country<span class="text-danger">*</span>
-                            <input className='form-control Inputs' type='text' name='user_country' value={editData.user_country} onChange={handleChange}></input>
+                            <input className='form-control Inputs' type='text' name='user_country' value={editData.user_country} onChange={handleChange} required></input>
                         </label>
                     </div>
                     <div class="d-flex justify-content-center" id="btn-div">
